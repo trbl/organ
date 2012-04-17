@@ -1,0 +1,79 @@
+<!--
+trbl - organ
+-- party version :3 --
+revision 2011
+
+Started coding before the party took place, after work with quite some beer.
+If you ever read this source, bare in mind that at 2/3 half oft it was coded
+at the party. Copied together older effects I had around, with noisy neighbours,
+snorting ppl and a crap load of energy drinks. I'M HYPERAWAKE!
+
+Next time I'll promise to use events, and proper, consistent code <3
+
+--
+music: ko0x
+code/gfx: mog
+support:wzl
+-->
+<!doctype html>
+<html>
+<head>
+	<title>trbl - Organ</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/lib/Stats.js"></script>
+	<script src="js/lib/RequestAnimationFrame.js"></script>
+	<script src="js/lib/Three.js"></script>
+	<script src="js/trblUtils.js"></script>
+	<script src="js/scene01.js"></script>
+	<script src="js/scene02.js"></script>
+	<script src="js/scene03.js"></script>
+	<script src="js/scene04.js"></script>
+	<script src="js/scene05.js"></script>
+	<script src="js/scene06.js"></script>
+	<script src="js/scene07.js"></script>
+	<script src="js/trblOrgan.js"></script>
+</head>
+<body style="background:#000000;overflow:hidden;" id="meow">
+	
+	<div id="goesLos" onclick="initOrgan()">goes los!</div>
+	
+	<img src="./img/bounce_sprite_map.png" id="bounceSpriteMap" style="display:none;" />
+	<img src="img/wave01.png" id="wave01" style="display:none;" />
+	
+	<div id="beetlejuice"></div>
+	<div id="trbl"></div>
+	<canvas id="antCanvas"></canvas>
+	<canvas id="wobbleCanvas"></canvas>
+	<canvas id="wobbleCanvasOff"></canvas>
+	<canvas id="endeBlende"></canvas>
+	<audio id="eargasm" src="snd/deephouse07_short.mp3" preload="auto"></audio>
+	
+	<img src="img/lub/alpha_c.png" id="alpha_c" style="display:none;" />
+	<img src="img/lub/asd.png" id="asd" style="display:none;" />
+	<img src="img/lub/evoflash.png" id="evoflash" style="display:none;" />
+	<img src="img/lub/fairlight.png" id="fairlight" style="display:none;" />
+	<img src="img/lub/farbrausch.png" id="farbrausch" style="display:none;" />
+	<img src="img/lub/gasman.png" id="gasman" style="display:none;" />
+	<img src="img/lub/haujobb.png" id="haujobb" style="display:none;" />
+	<img src="img/lub/kakiarts.png" id="kakiarts" style="display:none;" />
+	<img src="img/lub/kewlers.png" id="kewlers" style="display:none;" />
+	<img src="img/lub/m0d.png" id="m0d" style="display:none;" />
+	<img src="img/lub/malodix.png" id="malodix" style="display:none;" />
+	<img src="img/lub/mercury.png" id="mercury" style="display:none;" />
+	<img src="img/lub/mrdoob.png" id="mrdoob" style="display:none;" />
+	<img src="img/lub/nuance.png" id="nuance" style="display:none;" />
+	<img src="img/lub/p01.png" id="p01" style="display:none;" />
+	<img src="img/lub/saga_musix.png" id="saga_musix" style="display:none;" />
+	<img src="img/lub/topy44.png" id="topy44" style="display:none;" />
+	<img src="img/lub/xplsv.png" id="xplsv" style="display:none;" />
+	<img src="img/lub/3ln.png" id="3ln" style="display:none;" />
+	
+	<img src="img/trbl/katze.png" id="katze" style="display:none;" />
+	<img src="img/trbl/ko0x.png" id="ko0x" class="trbl" style="display:none;" />
+	<img src="img/trbl/mog.png" id="mog" class="trbl" style="display:none;" />
+	<img src="img/trbl/wzl.png" id="wzl" class="trbl" style="display:none;" />
+</body>
+</html>

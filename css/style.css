@@ -1,0 +1,74 @@
+@import "reset.css";
+
+#beetlejuice {
+	position:absolute;
+	top:0px;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:10;
+	background:url(../img/beetlejuice.gif) 0 bottom repeat-x, url(../img/beetlejuiceTop.gif) 0 top repeat-x;
+}
+
+#trbl{
+	float:left;
+	position:absolute;
+	z-index:7;
+	width:778px;
+	height:427px;
+	background:url(../img/trbl.png) 0 0 no-repeat;
+	left: 50%;
+	top: 30%;
+	
+	opacity:0;
+}
+
+canvas{
+	position:absolute;
+	z-index:5;
+}
+
+#antCanvas{
+	position:absolute;
+	z-index:6;
+}
+
+#wobbleCanvas{
+	position:absolute;
+	z-index:7;
+}
+
+#wobbleCanvasOff{
+	display:none;
+}
+
+#katze{
+	position:absolute;
+	bottom:0;
+	left:0;
+	z-index:9;
+}
+
+.trbl{
+	position:absolute;
+	right:50%;
+	top:27%;
+	z-index:8;
+}
+
+#goesLos{
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	font-family: georgia;
+	font-size: 72px;
+	color: #937f84;
+	cursor: pointer;
+	cursor: hand;
+	float: left;
+	z-index: 11;
+}
+
+#endeBlende{
+	z-index:20;
+}
